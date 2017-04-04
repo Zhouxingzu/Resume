@@ -1,5 +1,5 @@
 # 个人简历
-> 一套风格简洁清爽的简历[在线预览](http://www.xiaoyuer.me)
+> 一套风格简洁清爽的简历, [预览效果](http://www.xiaoyuer.me)
 
 ## 使用方法
 1. Clone 到本地
