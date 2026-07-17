@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/css/fontello.min.css">
 </head>
+<style>
+    @media print {
+  html, body {
+    height: auto !important;
+  }
+
+  .sidebar,
+  .main {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+.container {
+    background: #f0f2f1;
+}
+</style>
 <body>
-    <aside>
+    <!-- <aside>
         <ul>
             <li>
                 <a href="https://github.com/Zhouxingzu/Resume" target="_blank">源代码</a>
@@ -21,7 +37,7 @@
                 <a href="https://www.github.com/Zhouxingzu" target="_blank">GitHub</a>
             </li>
         </ul>
-    </aside>
+    </aside> -->
     <div class="container">
         <div class="sidebar">
             <div class="title">
@@ -32,9 +48,9 @@
             <ul class="side-info">
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
-                    <dd><i class="icon-mail-alt"></i>邮箱: <a href="javascript:;" target="_blank">guaidaojide007@gmail.com</a></dd>
-                    <dd><i class="icon-wechat"></i>微信: <a href="javascript:;">guaidaojide9527</a></dd>
-                    <dd><i class="icon-qq"></i>QQ: <a href="http://wpa.qq.com/msgrd?v=3&uin=112406836&site=qq&menu=yes" target="_blank">112406836</a></dd>
+                    <dd><i class="icon-mail-alt"></i>邮箱: <a href="javascript:;" target="_blank">112406836@qq.com</a></dd>
+                    <dd><i class="icon-phone-1"></i>电话: <a href="javascript:;">13650525053</a></dd>
+                    <!-- <dd><i class="icon-qq"></i>QQ: <a href="http://wpa.qq.com/msgrd?v=3&uin=112406836&site=qq&menu=yes" target="_blank">112406836</a></dd> -->
                 </li>
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Application. 应聘岗位</dt>
@@ -43,33 +59,39 @@
                 <li class="skill">
                     <dt><i class="icon-bookmark"></i>Tech. 技能点</dt>
                     <dd>
-                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-name">React</div>
                         <div class="skill-bar-wrap">
                             <div class="skill-bar" style="width: 80%"></div>
                         </div>
                     </dd>
                     <dd>
-                        <div class="skill-name">HTML</div>
-                        <div class="skill-bar-wrap">
-                            <div class="skill-bar" style="width: 75%"></div>
-                        </div>
-                    </dd>
-                    <dd>
-                        <div class="skill-name">CSS</div>
-                        <div class="skill-bar-wrap">
-                            <div class="skill-bar" style="width: 72%"></div>
-                        </div>
-                    </dd>
-                    <dd>
-                        <div class="skill-name">Photoshop</div>
+                        <div class="skill-name">Vue</div>
                         <div class="skill-bar-wrap">
                             <div class="skill-bar" style="width: 70%"></div>
                         </div>
                     </dd>
                     <dd>
-                        <div class="skill-name">Python</div>
+                        <div class="skill-name">TypeScript</div>
                         <div class="skill-bar-wrap">
-                            <div class="skill-bar" style="width: 50%"></div>
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="skill-name">Next.js</div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar" style="width: 70%"></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="skill-name">Tailwind</div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar" style="width: 70%"></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="skill-name">Node.js</div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar" style="width: 65%"></div>
                         </div>
                     </dd>
                 </li>
@@ -77,120 +99,94 @@
             <div class="note">
                 <p>爱思考，爱搞怪，不爱放弃，一研究就上瘾的阳光小伙一枚。</p>
                 <br>
-                <p>我目前正在寻找前端工程师岗位，希望借此机会为贵司献上一点绵薄之力。</p>
+                <!-- <p>我目前正在寻找前端工程师岗位，希望借此机会为贵司献上一点绵薄之力。</p> -->
             </div>
         </div>
         <div class="main">
             <ul class="main-info">
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
-                    <dd><span>个人信息:</span> 董卫星 / 男 / 25岁 / 本科</dd>
-                    <dd><span>Blog:</span> <a href="http://www.yuerxiao.com" target="_blank">www.yuerxiao.com</a></dd>
-                    <dd><span>GitHub:</span> <a href="https://www.github.com/Zhouxingzu" target="_blank">www.github.com/Zhouxingzu</a></dd>
+                    <dd><span>个人信息:</span> 董卫星 / 男 / 重庆科技大学(本科) / 7年前端工作经验</dd>
+                    <!-- <dd><span>Blog:</span> <a href="http://www.yuerxiao.com" target="_blank">www.yuerxiao.com</a></dd> -->
+                    <!-- <dd><span>GitHub:</span> <a href="https://www.github.com/Zhouxingzu" target="_blank">www.github.com/Zhouxingzu</a></dd> -->
                 </li>
                 <li>
                     <dt><i class="icon-bookmark"></i>Experience. 项目与工作经验</dt>
-                    <h3>泓盛环球定制旅行有限公司（2016.03 - 2017.03）</h3>
+                    <h3>深圳市同和信息技术有限公司（2025.02 - 至今）</h3>
                     <ul class="exp">
                         <li>
                             <div class="circle"></div>
-                            <h4>定制旅行官网项目</h4>
-                            <p>参与公司官网的前端开发工作，根据功能需求和设计图完成项目的大部分样式，完成了首页、主题旅行、旅行达人、关于等页面，其中有轮播图、表单验证、达人报名等内容。并对网站进行SEO优化，关键词“重庆定制旅行”百度排名第一。</p>
-                            <img src="img/hshqtour.jpg">
+                            <h4>马上云平台 - CMT云监控</h4>
+                            <p>1. 根据项目背景及功能预期，分析图表框架 Echars 和 Ant Design Charts 的差异，选择适配度更高的 Echars 做开发，并形成文档在小组内分享；</p>
+                            <p>2. 基于 React + Umi + Antd + Echars 重构云监控项目，支持云产品图表自定义拖拽配置，解决配置不够灵活的问题，重新编写接入文档。</p>
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>SalesSavvy - 海外项目</h4>
+                            <p>1. 运用 React + Next.js + Tailwind 构建系统，主导负责会前、会中洞察模块，完成会中文字实时转录，以及会后的音视频播放、字幕同步功能； </p>
+                            <p>2. 采用 React Native + Expo 开发 App 版本，负责项目基础框架搭建以及 Layout 和请求封装，并调研 IOS 相关开发与打包的完整流程；</p>
                         </li>
                     </ul>
-                    <h3>个人项目</h3>
+                    <h3>猪八戒股份有限公司（2017.05 - 2025.02）</h3>
                     <ul class="exp">
                         <li>
                             <div class="circle"></div>
-                            <h4>
-                                鱼儿小 个人博客（2014.10 - 至今）
-                                <a href="http://www.yuerxiao.com" target="_blank"><i class="icon-link"></i>Demo</a>
-                            </h4>
-                            <p>Wordpress主题修改，内容维护，用于记录生活趣事以及创作小故事。</p>
-                            <img src="img/yuerxiao.png">
+                            <h4>芭蕉扇系统</h4>
+                            <p>1. 主导升级芭蕉扇权限系统，完成权限管理的技术方案设计，抽象封装核心页面的按钮控制权限，按角色配置操作权限和查看权限，保证数据安全；</p>
+                            <p>2. 负责封装和维护芭蕉扇公共组件和接口，中间件校验逻辑处理（登录、数据过滤）以及优化报错日志信息，将所有 php 接口替换为 dubbo 接口；</p>
+                            <p>3. 主导开发企微侧边栏功能，调研企微侧边栏功能相关API并封装基础底层架构，解决单聊和群聊场景的用户锁定关系问题，完成芭蕉扇系统接入企微；</p>
                         </li>
                         <li>
                             <div class="circle"></div>
-                            <h4>
-                                百度IFE前端技术学院课程（2017.03 - 2017.04）
-                                <a href="https://github.com/Zhouxingzu/Baidu-IFE2017" target="_blank"><i class="icon-link"></i>源代码</a>
-                            </h4>
-                            <p>学习百度IFE前端技术学院2017春季班课程，并独立完成其中的任务。一些demo如下：</p>
-                            <br>
-                            <ul class="efe">
-                                <li>
-                                    <h5>
-                                        耀耀学院 Task5
-                                        <a href="https://github.com/Zhouxingzu/Baidu-IFE2017/tree/master/Yaoyao_college/demo5" target="_blank"><i class="icon-link"></i>源代码</a>
-                                        <a href="https://zhouxingzu.github.io/Baidu-IFE2017/Yaoyao_college/demo5/demo5.html" target="_blank"><i class="icon-link"></i>Demo</a>
-                                    </h5>
-                                    <p>实现了一个类似贪食蛇的游戏，点击相应按钮进行旋转、前进、翻转等动作。使用HTML5的Canvas进行图形绘制，通过CSS3的rotate进行旋转动画。</p>
-                                    <img src="img/task5.png">
-                                </li>
-                                <li>
-                                    <h5>耀耀学院 Task7
-                                        <a href="https://github.com/Zhouxingzu/Baidu-IFE2017/tree/master/Yaoyao_college/demo7" target="_blank"><i class="icon-link"></i>源代码</a>
-                                        <a href="https://zhouxingzu.github.io/Baidu-IFE2017/Yaoyao_college/demo7/demo7.html"><i class="icon-link"></i>Demo</a>
-                                    </h5>
-                                    <p>实现一个支持列排序的表格组件，提供生成表格的接口。</p>
-                                    <p>提供点击排序按钮后的响应接口，并提供默认的排序方法，点击排序按钮按从大到小排序，再次点击倒序排列，并更新表格中的数据显示。</p>
-                                    <img src="img/sort.png">
-                                </li>
-                            </ul>
+                            <h4>思博学院</h4>
+                            <p>1. 使用 orochi + nuxt 框架构建思博学院课程售卖的核心流程，主导设计视频防盗播方案，视频内容采用七牛云分片上传；</p>
+                            <p>2. 处理论坛中的富文本（TinyMCE）内容多端展示兼容问题，使用 bbcode 编码解码处理数据过滤问题，设计自定义模块内容的输入与解析；</p>
+                            <p>3. 使用 Node.js 作为服务中间层，负责封装IOS和安卓端的 http 接口；</p>
+                            <p>4. 主导开发并构建直播项目，通过研发成本、培训成本、使用难易度等多维度测试对比，筛选出性价比最高、最简便的方案和第三方服务商；</p>
                         </li>
                         <li>
                             <div class="circle"></div>
-                            <h4>
-                                轮播图插件
-                                <a href="https://github.com/Zhouxingzu/Online-retailers" target="_blank"><i class="icon-link"></i>源代码</a>
-                                <a href="https://zhouxingzu.github.io/Online-retailers/" target="_blank"><i class="icon-link"></i>Demo</a>
-                            </h4>
-                            <p>使用原生JS编写的一个电商头部页面，包括轮播图和侧边栏菜单。</p>
-                            <img src="img/lunbo.png">
+                            <h4>思博网</h4>
+                            <p>1. 从零开始构建线上服务教育平台，技术栈使用 nodejs+react+redux+antd，负责前端工作的统筹与系统稳定性维护，已入驻服务商500+；</p>
+                            <p>2. 设计双向账号绑定方案，解决两套用户体系共享登录状态（思博用户 + ZBJ用户）的问题，降低用户丢失率15%，并逐步迁移用户至ZBJ数据库；</p>
+                            <p>3. 构建政府项目网站低代码配置流程，使原有开发工作量2天/人的任务缩短为1小时/人；</p>
                         </li>
                         <li>
                             <div class="circle"></div>
-                            <h4>
-                                web项目：静态效果页和JavaScript交互效果
-                                <a href="https://github.com/Zhouxingzu/Practice-Demo" target="_blank"><i class="icon-link"></i>源代码</a>
-                                <a href="https://zhouxingzu.github.io/Practice-Demo/" target="_blank"><i class="icon-link"></i>Demo</a>
-                            </h4>
-                            <p>使用HTML5+CSS3编写的页面，宽度自适应，兼容各种主流浏览器。用JS实现当页面滑到相应位置加载CSS3动画、导航条双向绑定、滑动门效果。</p>
-                            <img src="img/h5demo.png">
+                            <h4>IPR 知识产权</h4>
+                            <p>负责参与88节专题活动 PC + H5 页面（涉及抢购、秒杀等），以及知产专利管理后台系统的开发；</p>
+                            <!-- <p>2. 负责 orochi-handlebars-ts 包的架构设计及核心编码；</p> -->
                         </li>
                     </ul>
+<!-- 
+                    <h3>泓盛环球定制旅行（2016.03 - 2017.04）</h3>
+                    <ul class="exp">
+                        <li>
+                            <div class="circle"></div>
+                            <h4>定制官网</h4>
+                            <p>1 .运用 HTML、CSS、Javascript  构建公司的 Web  网站。根据功能需求和设计图完成项目的大部分样式，完成了首页、主题旅行、旅行达人、关于等页面，其中有轮播图、表单验证、达人报名等内容。</p>
+                            <p>2. 整站进行SEO优化，理清层级关系，日均PV从0提升到2000+</p>
+                            <p>3. 利用业余时间完成百度 ife2017前端学院相关课程</p>
+                        </li>
+                    </ul> -->
                 </li>
                 <li>
                     <dt><i class="icon-bookmark"></i>Skill. 技能清单</dt>
-                    <h3>Web前端</h3>
                     <ul class="exp">
                         <li>
                             <div class="circle"></div>
-                            <h4>HTML / CSS</h4>
-                            <p>能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局</p>
-                            <p>熟悉HTML5和CSS3，对浏览器兼容有一定认识</p>
-                            <p>熟悉 Less / Sass / Autoprefixer 等CSS预处理和后处理方法、工具</p>
-                        </li>
-                        <li>
-                            <div class="circle"></div>
-                            <h4>JavaScript</h4>
-                            <p>熟悉原生Javascript，能脱离jQuery等类库编码</p>
-                            <p>能运用模块化、面向对象的方式编程</p>
-                            <p>了解 Vue.js 的使用</p>
-                        </li>
-                        <li>
-                            <div class="circle"></div>
-                            <h4>其他</h4>
-                            <p>熟悉Github版本管理，Grunt Gulp 前端自动化工具</p>
-                            <p>了解前端安全、性能优化方面的一些知识</p>
+                            <h4>核心技术能力</h4>
+                            <p><b>扎实的前端基础</b>：熟练掌握 HTML、JavaScript、CSS 等核心技术，熟悉浏览器工作原理与调试方法；</p>
+                            <p><b>主流框架与工程化能力</b>：熟练使用 React、Vue 等前端框架，具备公共组件沉淀与项目文档输出经验；</p>
+                            <p><b>AI 辅助开发工具</b>：熟练掌握 Claude Code、CodeX、Cursor 等编程工具，提升开发效率与代码质量；</p>
+                            <p><b>工程规范与自主解决问题</b>：具备良好的代码规范与开发习惯，能够独立完成复杂模块的设计与实现，同时具备优秀的沟通能力与自主学习能力，能够独立分析并解决技术问题；</p>
+                            <!-- <p><b>沟通与问题解决能力</b>：具备良好的沟通能力和自主学习能力，能够独立分析并解决技术问题；</p> -->
                         </li>
                     </ul>
                     <h3>其他</h3>
                     <ul class="exp">
-                        <li>
-                            <p>一个有故事的人，把编程当成艺术来创作</p>
-                            <p>严重强迫症，不能忍受界面一个像素的偏差，同样不能忍受代码格式一个空格的偏差</p>
+                        <li style="top: 0">
+                            <p>业余说唱歌手，会一点说唱，会一点代码。网易云音乐：<a href="https://music.163.com/#/artist?id=27869114" target="_blank">@周星祖</a></p>
                         </li>
                     </ul>
                 </li>
